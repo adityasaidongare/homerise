@@ -1,0 +1,119 @@
+/* App global styles */
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #f7fafc;
+  color: #22223b;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+.form-container h2 {
+  margin-bottom: 1.5rem;
+  color: #232946;
+}
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #f7fafc;
+  transition: border 0.2s;
+}
+.form-container input:focus,
+.form-container select:focus {
+  border: 1.5px solid #4fd1c5;
+  outline: none;
+}
+.form-container button {
+  width: 100%;
+  padding: 0.7rem;
+  background: #4fd1c5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.form-container button:disabled {
+  background: #b2f5ea;
+  cursor: not-allowed;
+}
+.error {
+  color: #e53e3e;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+/* List and page layouts */
+.property-list, .recommendation-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+}
+.property-list li, .recommendation-list li {
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 1.2rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.property-list button, .recommendation-list button {
+  margin-right: 0.7rem;
+  background: #232946;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.98rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.property-list button:hover, .recommendation-list button:hover {
+  background: #4fd1c5;
+  color: #232946;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 1.2rem 0.7rem;
+  }
+  .property-list li, .recommendation-list li {
+    padding: 0.8rem 0.5rem;
+  }
+}
+
+/* Admin layout */
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+}
+.admin-content {
+  flex: 1;
+  margin-left: 220px;
+  padding: 2rem 1.5rem;
+}
+@media (max-width: 900px) {
+  .admin-layout {
+    flex-direction: column;
+  }
+  .admin-content {
+    margin-left: 0;
+    padding: 1rem 0.5rem;
+  }
+}

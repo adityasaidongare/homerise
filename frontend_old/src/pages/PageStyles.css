@@ -1,0 +1,25 @@
+/* Dashboard, Home, NotFound, etc. */
+.home-page, .dashboard-page {
+  max-width: 600px;
+  margin: 2.5rem auto;
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  text-align: center;
+}
+.home-page h1 {
+  color: #232946;
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+.dashboard-page h2 {
+  color: #4fd1c5;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 600px) {
+  .home-page, .dashboard-page {
+    padding: 1.2rem 0.7rem;
+  }
+}
